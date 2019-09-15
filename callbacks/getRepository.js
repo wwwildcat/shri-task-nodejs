@@ -8,10 +8,11 @@ let pathToRepos = process.argv[2];
 module.exports = function(request, response) {
     let pathToRepo = path.join(pathToRepos, request.params['repositoryId']);
     let commitHash = 'master';
+    let params = ['ls-tree', commitHash];
     if (request.params['commitHash']) {//Проверка наличия в запросе ветки или хэша коммита
         commitHash = request.params['commitHash'];
         if (request.params['path']) {//Проверка наличия в запросе дальнейшего пути
-            pathToRepo = path.join(pathToRepos, request.params['repositoryId'], request.params['path']);
+            params[1] += ':' + request.params['path'];
         }
     }
     fs.access(pathToRepo, err => {//Проверка пути к репозиторию
@@ -20,7 +21,7 @@ module.exports = function(request, response) {
         }
         else {
             let out = '';
-            const gitTree = spawn('git', ['ls-tree', commitHash], {cwd: pathToRepo});
+            const gitTree = spawn('git', params, {cwd: pathToRepo});
             gitTree.stdout.on('data', chunk => {
                 out += chunk.toString();
             });

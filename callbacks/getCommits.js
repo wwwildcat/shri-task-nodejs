@@ -28,7 +28,8 @@ module.exports = function(request, response) {
                         "author": commit.match(/(?<=Author:).*/)[0].trim(),
                         "date": commit.match(/(?<=Date:).*/)[0].trim(),
                         "message": commit.match(/(?<=\n\n).*/)[0].trim()
-                    }));//Бонусная ручка (выдача коммитов в заданном диапазоне)
+                    }));
+                    //Бонусная ручка (выдача коммитов в заданном диапазоне)
                     if (request.query.from && request.query.to) {
                         let from = Number(request.query.from);
                         let to = Number(request.query.to);
@@ -36,7 +37,8 @@ module.exports = function(request, response) {
                         let end = commitsJSON.length;
                         if ((from > end && to > end) || (from < start && to < start)) {
                             response.status(404).send('No such commits');
-                        }//Определение границ диапазона
+                        }
+                        //Определение границ диапазона
                         else if (from >= start && from <= end) {
                             if (to >= start && to <= end) {
                                 end = to;
@@ -57,14 +59,16 @@ module.exports = function(request, response) {
                         }
                         else if (to <= end) {
                             end = to;
-                        }//Преобразование и выдача массива коммитов
+                        }
+                        //Преобразование и выдача массива коммитов
                         if (start <= end) {
                             response.json(commitsJSON.slice(start - 1, end));
                         }
                         else {
                             response.json(commitsJSON.slice(end - 1, start).reverse());
                         }
-                    }//Выдача полного списка коммитов
+                    }
+                    //Выдача полного списка коммитов
                     else {
                         response.json(commitsJSON);
                     }
