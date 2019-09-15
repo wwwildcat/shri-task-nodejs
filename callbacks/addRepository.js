@@ -8,6 +8,10 @@ let pathToRepos = process.argv[2];
 module.exports = function(request, response) {
     let pathToRepo = pathToRepos;
     let url = request.query.url.replace(/.*(?=:\/\/)/, 'git');
+<<<<<<< HEAD
+=======
+    console.log(url);
+>>>>>>> da26ed0c561c28477627bb8939f672e757d6808f
     let params = ['clone', url];
     let repoTitle = request.query.url.match(/(?<=\/)[^/]*\/?$/)[0].match(/[^/]*/)[0];
     if(request.params['repositoryId']) {
