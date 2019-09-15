@@ -7,7 +7,9 @@ let pathToRepos = process.argv[2];
 //Ручка POST /api/repos + { url: ‘repo-url’ }
 module.exports = function(request, response) {
     let pathToRepo = pathToRepos;
-    let params = ['clone', request.query.url];
+    let url = request.query.url.replace(/.*(?=:\/\/)/, 'git');
+    console.log(url);
+    let params = ['clone', url];
     let repoTitle = request.query.url.match(/(?<=\/)[^/]*\/?$/)[0].match(/[^/]*/)[0];
     if(request.params['repositoryId']) {
         params.push(request.params['repositoryId']);
@@ -19,22 +21,14 @@ module.exports = function(request, response) {
             response.send(repoTitle + ' already exists');
         }
         else {//Проверка существования удаленного репозитория
-            execFile('curl', ['-I', request.query.url], (err, out) => {
-                let code = out.match(/(?<=Status: )\S*/)[0];
-                if(code != '200') {
+            execFile('git', params, {cwd: pathToRepos}, (err, out) => {
+                if (err) {
                     response.status(404).send(request.query.url + ' not found');
                 }
                 else {
-                    execFile('git', params, {cwd: pathToRepos}, (err, out) => {
-                        if (err) {
-                            response.send(err);
-                        }
-                        else {
-                            response.send(repoTitle + ' has been added succesfully');
-                        }
-                    });
+                    response.send(repoTitle + ' has been added succesfully');
                 }
             });
         }
-    });  
+    });
 };
