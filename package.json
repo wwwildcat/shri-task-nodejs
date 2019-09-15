@@ -1,0 +1,15 @@
+{
+  "name": "shri_git_server",
+  "version": "0.0.1",
+  "description": "The homework for Yandex Web Development School",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
