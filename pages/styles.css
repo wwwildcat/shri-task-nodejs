@@ -1,954 +1,986 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 /* Стиль текста по умолчанию */
 .Text {
-    font-family: Arial, sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
 }
 /* Другие стили текста */
 .Text_style_bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .Text_style_code {
-    font-family: 'PT Mono', monospace;
-    font-size: 12px;
-    line-height: 20px;
+  font-family: 'PT Mono', monospace;
+  font-size: 12px;
+  line-height: 20px;
 }
 /* Размеры текста и интерлиньяж */
 .Text_size_13 {
-    font-size: 13px;
-    line-height: 18px;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .Text_size_16 {
-    font-size: 16px;
-    line-height: 20px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .Text_size_20 {
-    font-size: 20px;
-    line-height: 24px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .Text_size_24 {
-    font-size: 24px;
-    line-height: 28px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .Text_lineHeight_18 {
-    line-height: 18px;
+  line-height: 18px;
 }
 
 .Text_lineHeight_20 {
-    line-height: 20px;
+  line-height: 20px;
 }
 
 .Text_lineHeight_24 {
-    line-height: 24px;
+  line-height: 24px;
 }
 /* Цвета текста */
 .Text_color_gray_1 {
-    color: #434445;
+  color: #434445;
 }
 
 .Text_color_gray_2 {
-    color: #7F8285;
+  color: #7f8285;
 }
 
 .Text_color_gray_3 {
-    color: #8694A2;
+  color: #8694a2;
 }
 
 .Text_color_gray_4 {
-    color: #999;
+  color: #999;
 }
 
 .Text_color_gray_5 {
-    color: #B8BEC3;
+  color: #b8bec3;
 }
 
 .Text_color_blue {
-    color: #0433ff;
+  color: #0433ff;
 }
 
 .Text_color_lightBlue {
-    color: #1774E9;
+  color: #1774e9;
 }
 
 .Text_color_darkBlue {
-    color: #00234b;
+  color: #00234b;
 }
 
 .Text_color_purple {
-    color: #6B69C7;
+  color: #6b69c7;
 }
 
 .Text_color_lightGreen {
-    color:#19BC4D;
+  color: #19bc4d;
 }
 
 .Text_color_green {
-    color: #008f00;
+  color: #008f00;
 }
 
 .Text_color_red {
-    color:#FF3029;
+  color: #ff3029;
 }
 
 .Text_color_darkRed {
-    color:#b4261a;
+  color: #b4261a;
 }
 /* Стили для имени коммитера */
 .Commiter {
-    display: inline-block;
+  display: inline-block;
 }
 
 .Commiter::first-letter {
-    color: #FF3029;
+  color: #ff3029;
 }
 
 @media (max-width: 360px) {
-    .Table .Commiter::first-letter {
-        color: #000;
-    }
+  .Table .Commiter::first-letter {
+    color: #000;
+  }
 }
 /* Стрелки и прочие элементы оформления */
 .Icon-arrowDownBlack {
-    display: inline-block;
-    width: 13px;
-    height: 13px;
-    background: url('images/icons/arrowDownBlack.svg') 50% 50% no-repeat;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url('images/icons/arrowDownBlack.svg') 50% 50% no-repeat;
 }
 
 .Icon-arrowUpBlack {
-    display: inline-block;
-    width: 13px;
-    height: 13px;
-    background: url('images/icons/arrowUpBlack.svg') 50% 50% no-repeat;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: url('images/icons/arrowUpBlack.svg') 50% 50% no-repeat;
 }
 
 .Icon-arrowDownGray {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: url('images/icons/arrowDownGray.svg') 50% 50% no-repeat;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url('images/icons/arrowDownGray.svg') 50% 50% no-repeat;
 }
 
 .Icon-arrowUpGray {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: url('images/icons/arrowUpGray.svg') 50% 50% no-repeat;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url('images/icons/arrowUpGray.svg') 50% 50% no-repeat;
 }
 
 .Icon-arrow2DownGray {
-    display: inline-block;
-    width: 8px;
-    height: 10px;
-    background: url('images/icons/arrow2DownGray.svg') 50% 50% no-repeat;
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+  background: url('images/icons/arrow2DownGray.svg') 50% 50% no-repeat;
 }
 
 .Icon-arrow2UpBlack {
-    display: inline-block;
-    width: 8px;
-    height: 10px;
-    background: url('images/icons/arrow2UpBlack.svg') 50% 50% no-repeat;
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+  background: url('images/icons/arrow2UpBlack.svg') 50% 50% no-repeat;
 }
 
 .Icon-arrowLeftGray {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: url('images/icons/arrowLeftGray.svg') 50% 50% no-repeat;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url('images/icons/arrowLeftGray.svg') 50% 50% no-repeat;
 }
 
 .Icon-branch {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: url('images/icons/branch.svg') 50% 50% no-repeat;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url('images/icons/branch.svg') 50% 50% no-repeat;
 }
 
 .Icon-code {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background: url('images/icons/code.svg') 50% 50% no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url('images/icons/code.svg') 50% 50% no-repeat;
 }
 
 .Icon-download {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    background: url('images/icons/download.svg') 50% 50% no-repeat;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url('images/icons/download.svg') 50% 50% no-repeat;
 }
 
 .Icon-external {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    background: url('images/icons/external.svg') 50% 50% no-repeat;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url('images/icons/external.svg') 50% 50% no-repeat;
 }
 
 .Icon-file {
-    display: inline-block;
-    width: 12px;
-    height: 14px;
-    background: url('images/icons/file.svg') 50% 50% no-repeat;
+  display: inline-block;
+  width: 12px;
+  height: 14px;
+  background: url('images/icons/file.svg') 50% 50% no-repeat;
 }
 
 .Icon-fileCode {
-    display: inline-block;
-    width: 12px;
-    height: 14px;
-    background: url('images/icons/fileCode.svg') 50% 50% no-repeat;
+  display: inline-block;
+  width: 12px;
+  height: 14px;
+  background: url('images/icons/fileCode.svg') 50% 50% no-repeat;
 }
 
 .Icon-fileCodeGray {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: url('images/icons/fileCodeGray.svg') 50% 50% no-repeat;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url('images/icons/fileCodeGray.svg') 50% 50% no-repeat;
 }
 
 .Icon-folder {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: url('images/icons/folder.svg') 50% 50% no-repeat;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url('images/icons/folder.svg') 50% 50% no-repeat;
 }
 
 .Icon-menu {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: url('images/icons/menu.svg') 50% 50% no-repeat;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url('images/icons/menu.svg') 50% 50% no-repeat;
 }
 /**** Смысловые блоки и элементы ****/
 /* Шапка */
 .Header {
-    padding: 16px 0 19px 32px;
-    border-bottom: solid 1px #F0F2F3;
-    display: flex;
+  display: flex;
+  padding: 16px 0 19px 32px;
+  border-bottom: solid 1px #f0f2f3;
 }
 
 .Header-logo {
-    width: 118px;
-    height: 20px;
-    margin-right: 40px;
-    background-image: url('images/logo.svg');
+  width: 118px;
+  height: 20px;
+  margin-right: 40px;
+  background-image: url('images/logo.svg');
 }
 
 .Header-dropdown {
-    position: relative;
+  position: relative;
 }
 
 @media (max-width: 360px) {
-    .Header {
-        padding: 19px 0 21px 16px;
-    }
-    .Header-logo {
-        margin-right: 26px;
-    }
-    .Header-dropdown {
-        position: static;
-    }
-}
+  .Header {
+    padding: 19px 0 21px 16px;
+  }
 
+  .Header-logo {
+    margin-right: 26px;
+  }
+
+  .Header-dropdown {
+    position: static;
+  }
+}
 /* Раскрывающийся список репозиториев */
 .RepoList {
-    position: absolute;
-    z-index: 10;
-    top: 40px;
-    width: 266px;
-    padding: 14px 22px 18px;
-    margin: 0;
-    box-shadow: 0px 4px 16px rgba(53, 73, 93, 0.2);
-    background: #fff;
-    list-style-type: none;
+  position: absolute;
+  z-index: 10;
+  top: 40px;
+  width: 266px;
+  margin: 0;
+  padding: 14px 22px 18px;
+  list-style-type: none;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(53, 73, 93, 0.2);
 }
 
 .RepoList-item {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .RepoList-item:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .RepoList_closed {
-    display: none;
+  display: none;
 }
 
 .RepoList-currentRepo {
-    position: relative;
-    top: 1px;
-    padding-bottom: 18px;
-    border-bottom: solid 3px #FF4F49;
+  position: relative;
+  top: 1px;
+  padding-bottom: 18px;
+  border-bottom: solid 3px #ff4f49;
 }
 
 .RepoList-arrow {
-    margin-left: 4px;
-    position: relative;
-    top: 3px;
-    cursor: pointer;
+  position: relative;
+  top: 3px;
+  margin-left: 4px;
+  cursor: pointer;
 }
 
 @media (max-width: 360px) {
-    .RepoList-currentRepo {
-        top: 5px;
-        padding-bottom: 16px;
-    }
-    .RepoList-arrow {
-        top: 7px;
-    }
-    .RepoList {
-        border-radius: 10px 10px 0 0;
-        width: 100%;
-        height: 168px;
-        left: 0;
-        top: calc(100% - 203px);
-        padding: 36px 16px 24px;
-    }
-    .RepoList::before {
-        content: '';
-        position: absolute;
-        top: 8px;
-        left: calc(50% - 21px);
-        width: 42px;
-        height: 4px;
-        background: #E5E5E5;
-        border-radius: 10px;
-    }
-    .RepoList-item {
-        margin-bottom: 24px;
-    }
+  .RepoList-currentRepo {
+    top: 5px;
+    padding-bottom: 16px;
+  }
+
+  .RepoList-arrow {
+    top: 7px;
+  }
+
+  .RepoList {
+    top: calc(100% - 203px);
+    left: 0;
+    width: 100%;
+    height: 168px;
+    padding: 36px 16px 24px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .RepoList::before {
+    position: absolute;
+    top: 8px;
+    left: calc(50% - 21px);
+    width: 42px;
+    height: 4px;
+    content: '';
+    border-radius: 10px;
+    background: #e5e5e5;
+  }
+
+  .RepoList-item {
+    margin-bottom: 24px;
+  }
 }
 /* Основное содержимое страницы */
 .Main {
-    padding: 0 32px;
+  padding: 0 32px;
 }
 
 .Main-content {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 
 .Main-content_variable {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 
 @media (max-width: 360px) {
-    .Main-content_variable {
-        margin-top: 12px;
-    }
+  .Main-content_variable {
+    margin-top: 12px;
+  }
 }
 /* Путь к текущему файлу/папке */
 .Path {
-    word-spacing: 0.8em;
-    word-wrap: break-word;
-    border-bottom: solid 1px #E5E5E5;
-    padding: 12px 0 10px;
-    margin: 0;
+  margin: 0;
+  padding: 12px 0 10px;
+  word-spacing: 0.8em;
+  word-wrap: break-word;
+  border-bottom: solid 1px #e5e5e5;
 }
-/*Текущие репозиторий и ветка*/
+/* Текущие репозиторий и ветка */
 .Current {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 
 .Current-fileName {
-    margin-bottom: 10px;
-    display: inline-block;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .Current-dropdown {
-    position: relative;
-    display: inline-block;
-    margin-left: 4px;
-    margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 4px;
 }
 
 @media (max-width: 360px) {
-    .Main {
-        padding: 0;
-    }
+  .Main {
+    padding: 0;
+  }
 
-    .Path {
-        padding-bottom: 8px;
-        margin: 0 16px;
-    }
+  .Path {
+    margin: 0 16px;
+    padding-bottom: 8px;
+  }
 
-    .Current {
-        margin: 10px 16px 0;
-    }
+  .Current {
+    margin: 10px 16px 0;
+  }
 
-    .Current-fileName {
-        margin-bottom: 4px;
-    }
+  .Current-fileName {
+    margin-bottom: 4px;
+  }
 
-    .Current-dropdown {
-        position: static;
-        margin-bottom: 4px;
-    }
+  .Current-dropdown {
+    position: static;
+    margin-bottom: 4px;
+  }
 }
 /* Раскрывающийся список веток */
 .BranchList_closed {
-    display: none;
+  display: none;
 }
 
 .BranchList-arrow {
-    margin-left: 2px;
-    position: relative;
-    top: -2px;
-    cursor: pointer;
+  position: relative;
+  top: -2px;
+  margin-left: 2px;
+  cursor: pointer;
 }
 
 .BranchList {
-    position: absolute;
-    z-index: 5;
-    left: 0;
-    top: 30px;
-    width: 320px;
-    height: 360px;
-    padding: 0;
-    margin: 0;
-    box-shadow: 0px 4px 16px rgba(53, 73, 93, 0.2);
-    border-radius: 5px;
-    background: #fff;
-    list-style-type: none;
-    overflow: auto;
+  position: absolute;
+  z-index: 5;
+  top: 30px;
+  left: 0;
+  overflow: auto;
+  width: 320px;
+  height: 360px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(53, 73, 93, 0.2);
 }
 
 .BranchList-item {
-    padding: 10px 12px 6px;
-    margin: 0;
+  margin: 0;
+  padding: 10px 12px 6px;
 }
 
 .BranchList-itemName {
-    margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 
 .BranchList-item:first-child {
-    padding: 10px 12px 6px;
-    margin: 4px 0;
-    background: #4F4F4F;
+  margin: 4px 0;
+  padding: 10px 12px 6px;
+  background: #4f4f4f;
 }
 
 .BranchList-item:first-child .BranchList-itemName {
-    color: #F2F2F2;
+  color: #f2f2f2;
 }
 
 .BranchList-item:first-child .BranchList-lastCommit {
-    color: #E0E0E0;
+  color: #e0e0e0;
 }
 
 .BranchList-break {
-    margin: 0 12px;
-    border: none;
-    border-top: solid 1px #E5E5E5;
+  margin: 0 12px;
+  border: none;
+  border-top: solid 1px #e5e5e5;
 }
 
 .BranchList-item:not(:first-child):hover {
-    background: #F4F5F6;
-    cursor: pointer;
+  cursor: pointer;
+  background: #f4f5f6;
 }
 
 .BranchList-item:not(:first-child):hover .BranchList-itemName {
-    color: #000;
+  color: #000;
 }
 
 .BranchList-item:not(:first-child):hover .BranchList-lastCommit {
-    color: #434445;
+  color: #434445;
 }
 
 @media (max-width: 360px) {
-    .BranchList {
-        border-radius: 10px 10px 0 0;
-        width: 100%;
-        height: 320px;
-        left: 0;
-        top: calc(100% - 320px);
-        padding-top: 24px;
-    }
-    .BranchList::before {
-        content: '';
-        position: absolute;
-        top: 8px;
-        left: calc(50% - 21px);
-        width: 42px;
-        height: 4px;
-        background: #E5E5E5;
-        border-radius: 10px;
-    }
+  .BranchList {
+    top: calc(100% - 320px);
+    left: 0;
+    width: 100%;
+    height: 320px;
+    padding-top: 24px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .BranchList::before {
+    position: absolute;
+    top: 8px;
+    left: calc(50% - 21px);
+    width: 42px;
+    height: 4px;
+    content: '';
+    border-radius: 10px;
+    background: #e5e5e5;
+  }
 }
 /* Вкладки, переключающие основное содержимое страницы */
 .Tabs-tab {
-    display: inline-block;
-    margin-right: 32px;
-    padding-bottom: 8px;
-    position: relative;
-    top: 1px;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  margin-right: 32px;
+  padding-bottom: 8px;
 }
 
 .Tabs-tab_selected {
-    color: #000;
-    border-bottom: solid 3px #FF4F49;
+  color: #000;
+  border-bottom: solid 3px #ff4f49;
 }
 
 .Tabs {
-    margin-top: 18px;
-    border-bottom: solid 1px #E5E5E5;
+  margin-top: 18px;
+  border-bottom: solid 1px #e5e5e5;
 }
 
 @media (max-width: 360px) {
-    .Tabs {
-        margin: 16px;
-        margin-bottom: 0;
-    }
+  .Tabs {
+    margin: 16px;
+    margin-bottom: 0;
+  }
 }
 /* Таблица */
 .Table-row {
-    display: grid;
-    border-bottom: solid 1px #F2F2F2;
-    padding: 16px 8px 12px;
+  display: grid;
+  padding: 16px 8px 12px;
+  border-bottom: solid 1px #f2f2f2;
 }
 
 .Table_content_files .Table-row {
-    grid-template-columns: 4fr 4fr 7.5fr 3.5fr 3fr;
+  grid-template-columns: 4fr 4fr 7.5fr 3.5fr 3fr;
 }
 
 .Table_content_branches .Table-row {
-    grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .Table-row:first-child {
-    padding: 16px 8px 8px;
-    border-bottom: solid 1px #E5E5E5;
+  padding: 16px 8px 8px;
+  border-bottom: solid 1px #e5e5e5;
 }
 
 .Table-row:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .Table_nav .Table-row:last-child {
-    border-bottom: solid 1px #F2F2F2;
+  border-bottom: solid 1px #f2f2f2;
 }
 
 .Table-cell:last-child {
-    text-align: right;
+  text-align: right;
 }
 
 .Table-button {
-    display: none;
+  display: none;
 }
 
 .Table-name {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 @media (max-width: 360px) {
-    .Table {
-        margin: 0 16px;
-    }
-    .Table-row {
-        padding: 12px 0;
-        position: relative;
-    }
-    .Table_content_files .Table-row {
-        grid-template-areas: 
-        'name name name'
-        'commit commit commit'
-        'hash author date';
-        grid-template-columns: 0.8fr auto 2fr;
-    }
-    .Table_content_branches .Table-row {
-        display: flex;
-        flex-direction: column;
-    }
-    .Table-row:first-child {
-        display: none;
-    }
-    .Table-cell:first-child {
-        grid-area: name;
-        padding-bottom: 10px;
-    }
-    .Table-cell:nth-child(2) {
-        grid-area: hash;
-        padding-right: 8px;
-        text-align: left;
-    }
-    .Table-cell:nth-child(3) {
-        grid-area: commit;
-        padding-bottom: 9px;
-    }
-    .Table-cell:nth-child(4) {
-        grid-area: author;
-    }
-    .Table-cell:nth-child(4)::before {
-        content: 'by ';
-    }
-    .Table-cell:nth-child(5) {
-        grid-area: date;
-        text-align: left;
-    }
-    .Table-cell:nth-child(5)::before {
-        content: ',  ';
-    }
-    .Table-button {
-        display: block;
-        background: url('images/icons/arrowRightGray.svg');
-        position: absolute;
-        width: 9px;
-        height: 21px;
-        right: 4px;
-        top: 41px;
-    }
+  .Table {
+    margin: 0 16px;
+  }
+
+  .Table-row {
+    position: relative;
+    padding: 12px 0;
+  }
+
+  .Table_content_files .Table-row {
+    grid-template-areas: 'name name name' 'commit commit commit' 'hash author date';
+    grid-template-columns: 0.8fr auto 2fr;
+  }
+
+  .Table_content_branches .Table-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Table-row:first-child {
+    display: none;
+  }
+
+  .Table-cell:first-child {
+    padding-bottom: 10px;
+    grid-area: name;
+  }
+
+  .Table-cell:nth-child(2) {
+    padding-right: 8px;
+    text-align: left;
+    grid-area: hash;
+  }
+
+  .Table-cell:nth-child(3) {
+    padding-bottom: 9px;
+    grid-area: commit;
+  }
+
+  .Table-cell:nth-child(4) {
+    grid-area: author;
+  }
+
+  .Table-cell:nth-child(4)::before {
+    content: 'by ';
+  }
+
+  .Table-cell:nth-child(5) {
+    text-align: left;
+    grid-area: date;
+  }
+
+  .Table-cell:nth-child(5)::before {
+    content: ',  ';
+  }
+
+  .Table-button {
+    position: absolute;
+    top: 41px;
+    right: 4px;
+    display: block;
+    width: 9px;
+    height: 21px;
+    background: url('images/icons/arrowRightGray.svg');
+  }
 }
 /* Просмотр содержимого файла или коммита */
 .Viewer {
-    border-radius: 4px 4px 0 0;
-    border: solid 1px;
+  border: solid 1px;
+  border-radius: 4px 4px 0 0;
 }
 
 .Viewer_file {
-    border-color: #E5E5E5;
+  border-color: #e5e5e5;
 }
 
 .Viewer_diff {
-    border-color: #F0F2F3;
+  border-color: #f0f2f3;
 }
 
 .Viewer-header {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    border-bottom: solid 1px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px;
 }
 
 .Viewer-header_file {
-    padding: 15px 16px 8px;
-    border-bottom-color: #E5E5E5;
-    background: #F5F5F5;
+  padding: 15px 16px 8px;
+  border-bottom-color: #e5e5e5;
+  background: #f5f5f5;
 }
 
 .Viewer-header_diff {
-    padding: 13px 16px 9px 12px;
-    border-bottom-color: #F0F2F3;
-    background: #FAFBFC;
+  padding: 13px 16px 9px 12px;
+  border-bottom-color: #f0f2f3;
+  background: #fafbfc;
 }
 
 .Viewer_diffDetails {
-    position: relative;
+  position: relative;
 }
 
 .Viewer-header_diff .Viewer-icon {
-    position: absolute;
-    top: 17px;
-    left: 38px;
+  position: absolute;
+  top: 17px;
+  left: 38px;
 }
 
 .Viewer-fileName {
-    margin-left: 9px;
+  margin-left: 9px;
 }
 
 .Viewer-diffStatus {
-    position: absolute;
-    top: 13px;
-    left: 12px;
+  position: absolute;
+  top: 13px;
+  left: 12px;
 }
 
 .Viewer-diffPath {
-    margin-left: 60px;
-    display: block;
-    overflow: hidden;
+  display: block;
+  overflow: hidden;
+  margin-left: 60px;
 }
 
 .Viewer-diffRange {
-    padding: 7px 11px 0;
-    background: #F1F8FF;
-    display: grid;
-    grid-template-columns: 0.8fr 0.23fr 1fr;
+  display: grid;
+  padding: 7px 11px 0;
+  background: #f1f8ff;
+  grid-template-columns: 0.8fr 0.23fr 1fr;
 }
 
 .Viewer-diffSizeNew {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
 .Viewer-diffSizeOld {
-    margin-right: 24px;
+  margin-right: 24px;
 }
 
 .Viewer-content {
-    overflow: auto;
-    word-wrap: break-word;
+  overflow: auto;
+  word-wrap: break-word;
 }
 
 .Viewer-content_readme {
-    max-width: 1128px;
-    padding: 24px 32px;
+  max-width: 1128px;
+  padding: 24px 32px;
 }
 
 .Viewer-content_code {
-    padding: 6px 24px;
+  padding: 6px 24px;
 }
 
 .Viewer-content_diff {
-    padding-top: 4px;
+  padding-top: 4px;
 }
 
 @media (max-width: 360px) {
-    .Viewer-content_readme {
-        padding: 16px 24px;
-    }
-    .Viewer-loadButton {
-        display: none;
-    }
-    .Viewer-header_diff {
-        flex-direction: column;
-    }
-    .Viewer-diffStatus {
-        left: 16px;
-    }
-    .Viewer-header_diff .Viewer-icon {
-        left: 41px;
-    }
-    .Viewer-diffPath {
-        margin-bottom: 8px;
-    }
-    .Viewer-diffSize .Icon-external {
-        position: absolute;
-        right: 16px;
-        top: 44px;
-    }
+  .Viewer-content_readme {
+    padding: 16px 24px;
+  }
+
+  .Viewer-loadButton {
+    display: none;
+  }
+
+  .Viewer-header_diff {
+    flex-direction: column;
+  }
+
+  .Viewer-diffStatus {
+    left: 16px;
+  }
+
+  .Viewer-header_diff .Viewer-icon {
+    left: 41px;
+  }
+
+  .Viewer-diffPath {
+    margin-bottom: 8px;
+  }
+
+  .Viewer-diffSize .Icon-external {
+    position: absolute;
+    top: 44px;
+    right: 16px;
+  }
 }
 
 .Viewer-loadButton {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-    width: 38px;
-    height: 28px;
-    cursor: pointer;
-    border: 1px solid #CCCCCC;
-    border-radius: 3px;
-    background: url('images/icons/download.svg') 50% 50% no-repeat;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  width: 38px;
+  height: 28px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: url('images/icons/download.svg') 50% 50% no-repeat;
 }
 
 .Viewer-menuButton {
-    width: 175px;
-    height: 28px;
-    position: absolute;
-    top: 72px;
-    right: 32px;
-    box-sizing: border-box;
-    cursor: pointer;
-    border-radius: 4px;
-    background: #E6E6E6;
-    padding: 7px 12px 6px;
+  position: absolute;
+  top: 72px;
+  right: 32px;
+  box-sizing: border-box;
+  width: 175px;
+  height: 28px;
+  padding: 7px 12px 6px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #e6e6e6;
 }
 
 .Viewer-backButton {
-    display: none;
+  display: none;
 }
 
 .Viewer-menuButton .Icon-menu {
-    margin-right: 6px;
-    position: relative;
-    top: 1px;
+  position: relative;
+  top: 1px;
+  margin-right: 6px;
 }
 
 .Viewer-backButton .Icon-arrowLeftGray {
-    margin-right: 6px;
-    position: relative;
-    top: 2px;
+  position: relative;
+  top: 2px;
+  margin-right: 6px;
 }
 
 .Viewer-lineNumber {
-    display: inline-block;
-    width: 15px;
-    text-align: right;
+  display: inline-block;
+  width: 15px;
+  text-align: right;
 }
 
 .Viewer-lineNumber_file {
-    color: #999;
-    padding-right: 24px;
+  padding-right: 24px;
+  color: #999;
 }
 
 .Viewer-lineNumber_diffOld {
-    margin-left: 27px;
-    padding-right: 27px;
-    color: #B8BEC3;
+  margin-left: 27px;
+  padding-right: 27px;
+  color: #b8bec3;
 }
 
 .Viewer-lineNumber_diffNew {
-    padding-right: 29px;
-    color: #B8BEC3;
+  padding-right: 29px;
+  color: #b8bec3;
 }
 
 .Viewer-line_diffNew .Viewer-lineNumber_diffNew {
-    margin-left: 69px;
+  margin-left: 69px;
 }
 
 .Viewer-line_diffOld .Viewer-lineNumber_diffOld {
-    padding-right: 71px;
+  padding-right: 71px;
 }
 
 .Viewer-line {
-    display: inline-block;
-    width: 100%;
+  display: inline-block;
+  width: 100%;
 }
 
 .Viewer-line_diffOld {
-    background: #FFEEF0;
+  background: #ffeef0;
 }
 
 .Viewer-line_diffNew {
-    background: #E6FFED;
+  background: #e6ffed;
 }
 
 .Code {
-    margin: 0;
+  margin: 0;
 }
 
 @media (max-width: 360px) {
-    .Viewer-menuButton {
-        top: 68px;
-        right: 16px;
-    }
-    .Viewer-backButton {
-        display: block;
-        position: absolute;
-        top: 75px;
-        left: 16px;
-    }
-    .Viewer-diffRange {
-        grid-template-columns: 1fr;
-    }
-    .Viewer-diffRangeButtonDown {
-        display: none;
-    }
-    .Viewer-diffRangeButtonUp {
-        display: none;
-    }
+  .Viewer-menuButton {
+    top: 68px;
+    right: 16px;
+  }
+
+  .Viewer-backButton {
+    position: absolute;
+    top: 75px;
+    left: 16px;
+    display: block;
+  }
+
+  .Viewer-diffRange {
+    grid-template-columns: 1fr;
+  }
+
+  .Viewer-diffRangeButtonDown {
+    display: none;
+  }
+
+  .Viewer-diffRangeButtonUp {
+    display: none;
+  }
 }
 /* Информация о коммите */
 .Commit_in_history {
-    position: relative;
-    left: 52px;
-    flex-basis: 0;
-    flex-grow: 6;
+  position: relative;
+  left: 52px;
+  flex-basis: 0;
+  flex-grow: 6;
 }
 
 .Commit-hashButton {
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .Commit-dateList {
-    list-style-type: none;
-    padding-left: 0;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .Commit-dateListItem {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .Commit-dateListItem:not(:last-child) {
-    padding-bottom: 14px;
+  padding-bottom: 14px;
 }
 
 .Commit-dateListItem:not(:last-child)::after {
-    content: '';
-    width: 2px;
-    position: absolute;
-    left: 19px;
-    top: 42px;
-    bottom: 2px;
-    background: #B8BEC3;
-    border-radius: 10px;
+  position: absolute;
+  top: 42px;
+  bottom: 2px;
+  left: 19px;
+  width: 2px;
+  content: '';
+  border-radius: 10px;
+  background: #b8bec3;
 }
 
 .Commit-icon {
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #EBF6FD url('images/vector.svg') 50% 50% no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ebf6fd url('images/vector.svg') 50% 50% no-repeat;
 }
 
 .Commit-message {
-    padding-bottom: 2px;
+  padding-bottom: 2px;
 }
 
 .Commit-details {
-    padding-top: 4px;
+  padding-top: 4px;
 }
 
 .Commit_in_diff {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .Commit-button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 @media (max-width: 360px) {
-    .Commit_in_diff {
-        margin-top: 48px;
-        margin-bottom: 0;
-        padding: 0 16px;
-    }
-    .Commit_in_diff .Commit-message {
-        font-size: 20px;
-        padding-bottom: 8px;
-    }
-    .Commit_in_diff .Commit-details {
-        font-size: 14px;
-    }
-    .Commit-dateList {
-        padding: 0 16px;
-    }
-    .Commit-date {
-        padding: 0 16px;
-    }
-    .Commit-dateListItem .Commit-message {
-        margin-right: 16px;
-    }
-    .Commit-hashButton {
-        justify-content: flex-end;
-    }
-    .Commit-hash {
-        display: none;
-    }
+  .Commit_in_diff {
+    margin-top: 48px;
+    margin-bottom: 0;
+    padding: 0 16px;
+  }
+
+  .Commit_in_diff .Commit-message {
+    padding-bottom: 8px;
+    font-size: 20px;
+  }
+
+  .Commit_in_diff .Commit-details {
+    font-size: 14px;
+  }
+
+  .Commit-dateList {
+    padding: 0 16px;
+  }
+
+  .Commit-date {
+    padding: 0 16px;
+  }
+
+  .Commit-dateListItem .Commit-message {
+    margin-right: 16px;
+  }
+
+  .Commit-hashButton {
+    justify-content: flex-end;
+  }
+
+  .Commit-hash {
+    display: none;
+  }
 }
 /* Подвал */
 .Footer {
-    border-top: solid 1px #F0F2F3;
-    padding: 18px 20px 14px;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 20px 14px;
+  border-top: solid 1px #f0f2f3;
 }
 
 .Footer-version {
-    margin-right: 32px;
+  margin-right: 32px;
 }
 
 @media (max-width: 360px) {
-    .Footer {
-        display: none;
-    }
+  .Footer {
+    display: none;
+  }
 }
